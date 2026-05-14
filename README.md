@@ -1,25 +1,44 @@
-How to Run
-Ensure you have Python installed on your system.
+# TONY ASCII Banner and Airplane Script
+# Run this in a terminal with a monospaced font
 
-Copy the code into a file named main.py.
+def main():
+    print('Hello World')
 
-Run the script using your terminal:
+    # The banner text (3D TONY Box)
+    banner = r'''
+__________________________________________________________
+ /                                                         /|
+/   ########     #######     ####    ###   ###    ###     / |
+/       ##       ###   ###    #####   ###    ###  ###     /  |
+|       ##       ##     ##    ######  ###     ######      |  |
+|       ##       ##     ##    ### ### ###      ####       |  |
+|       ##       ###   ###    ###  ######       ##         |  |
+|       ##        #######     ###   #####       ##         |  |
+|                                                          | /
+|__________________________________________________________|/
+ \   \   \   \   \   \   \   \   \   \   \   \   \   \   \   \
+  \___\___\___\___\___\___\___\___\___\___\___\___\___\___\___\
+'''
 
-Bash
-python main.py
-Requirements
-Python 3.x
+    # The airplane ASCII
+    airplane = r'''
+             _
+           -=\ \
+              \ \____
+           _.-^^   _--^                 _
+          <        __-----------_      ( )
+           -.__  -                __   //
+               -------_         --  |_//
+                  /  /  _  ------    /
+                 /  /  ( )          /
+                /  /____________---'
+               /  /
+              (  /
+               \/
+'''
 
-A monospaced font in your terminal/IDE for proper alignment.
+    print(banner)
+    print(airplane)
 
-License
-This project is open-source and free to use for any purpose.
-"""
-
-with open('README.md', 'w') as f:
-f.write(content)
-
-Your README.md file is ready.
-
-[file-tag: code-generated-file-0-1778771744647566152]
-
+if __name__ == "__main__":
+    main()
